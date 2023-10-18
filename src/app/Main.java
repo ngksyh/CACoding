@@ -49,7 +49,7 @@ public class Main {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
+ 
         SignupView signupView = SignupUseCaseFactory.create(viewManagerModel, loginViewModel, signupViewModel, userDataAccessObject);
         views.add(signupView, signupView.viewName);
 
